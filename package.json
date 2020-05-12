@@ -8,11 +8,11 @@
   },
   "devDependencies": {
     "@stencil/core": "^1.12.2",
-    "@xapi/xapi": "git+https://github.com/xapijs/xapi.git#split"
+    "@xapi/xapi": "file:../xapi"
   },
   "license": "MIT",
   "dependencies": {
-    "@xapi/cmi5": "git+https://github.com/xapijs/cmi5.git",
+    "@xapi/cmi5": "file:../cmi5",
     "leaflet": "^1.6.0"
   }
 }

@@ -1,5 +1,5 @@
 import { Component, h, State, Listen } from "@stencil/core";
-import { Cmi5 } from "@xapi/cmi5";
+import Cmi5 from "@xapi/cmi5";
 import { ObjectiveActivity } from "@xapi/xapi";
 
 const testObjective: ObjectiveActivity = {
