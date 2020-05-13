@@ -4,11 +4,13 @@
   "description": "",
   "scripts": {
     "build": "stencil build",
-    "start": "stencil build --dev --watch --serve"
+    "start": "stencil build --dev --watch --serve",
+    "archive": "npm run build && bestzip cmi5-demo.zip www/*"
   },
   "devDependencies": {
     "@stencil/core": "^1.12.2",
-    "@xapi/xapi": "file:../xapi"
+    "@xapi/xapi": "file:../xapi",
+    "bestzip": "^2.1.5"
   },
   "license": "MIT",
   "dependencies": {

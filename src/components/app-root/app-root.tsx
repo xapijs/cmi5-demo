@@ -4,7 +4,7 @@ import { ObjectiveActivity } from "@xapi/xapi";
 
 const testObjective: ObjectiveActivity = {
   objectType: "Activity",
-  id: "https://github.com/CookieCookson/xAPI-JS/objectives/test",
+  id: "https://github.com/xapijs/cmi5-demo/objectives/test",
   definition: {
     type: "http://adlnet.gov/expapi/activities/objective",
     name: {
