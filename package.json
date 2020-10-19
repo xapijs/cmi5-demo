@@ -1,6 +1,6 @@
 {
   "name": "@xapi/cmi5-demo",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "scripts": {
     "build": "stencil build",
