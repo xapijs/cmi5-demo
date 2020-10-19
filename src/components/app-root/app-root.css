@@ -1,16 +1,45 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0px;
   padding: 0px;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  overflow: hidden;
+  height: 100%;
+}
+
+app-root {
+  display: block;
+  height: 100%;
 }
 
 header {
-  background: #5851ff;
-  color: white;
+  background-color: rgb(31, 50, 85);
   height: 56px;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.icon {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  margin-left: 1rem;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+h4 {
+  color: rgb(31, 50, 85);
 }
 
 h1 {
@@ -21,33 +50,50 @@ h1 {
 }
 
 main {
-  padding: 10px;
+  position: absolute;
+  top: 56px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: scroll;
+  padding: 1rem;
 }
 
 button,
 input[type="submit"] {
-  background: #5851ff;
+  background-color: rgb(31, 50, 85);
   color: white;
-  margin: 8px;
+  margin: 0.5rem;
   border: none;
   font-size: 13px;
   font-weight: 700;
-  text-transform: uppercase;
   padding: 16px 20px;
   border-radius: 2px;
-  box-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
   outline: 0;
-  letter-spacing: .04em;
-  transition: all .15s ease;
+  letter-spacing: 0.04em;
+  transition: all 0.15s ease;
   cursor: pointer;
 }
-  
+
+@media (max-width: 768px) {
+  button,
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 button:hover:not(:disabled),
 button.pressed,
 input[type="submit"]:hover:not(:disabled),
 input.pressed {
-  box-shadow: 0 3px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
   transform: translateY(1px);
+  background-color: rgb(70, 130, 179);
 }
 
 button:disabled,
