@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@xapi/cmi5": "^0.2.0",
+    "@xapi/cmi5": "^0.4.0",
     "leaflet": "^1.7.1"
   }
 }
