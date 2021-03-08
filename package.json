@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@stencil/core": "^1.8.12",
-    "@xapi/xapi": "^0.6.9",
+    "@xapi/xapi": "^1.0.0",
     "bestzip": "^2.1.7"
   },
   "license": "MIT",
