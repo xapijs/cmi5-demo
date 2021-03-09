@@ -1,6 +1,6 @@
 {
   "name": "@xapi/cmi5-demo",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "build": "stencil build",
@@ -8,13 +8,13 @@
     "archive": "npm run build && cd www && bestzip ../cmi5-demo.zip *"
   },
   "devDependencies": {
-    "@stencil/core": "^1.8.12",
-    "@xapi/xapi": "^0.6.9",
+    "@stencil/core": "^2.4.0",
+    "@xapi/xapi": "^1.0.0",
     "bestzip": "^2.1.7"
   },
   "license": "MIT",
   "dependencies": {
-    "@xapi/cmi5": "^0.2.0",
+    "@xapi/cmi5": "^1.0.0",
     "leaflet": "^1.7.1"
   }
 }
