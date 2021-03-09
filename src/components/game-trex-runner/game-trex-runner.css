@@ -1,6 +1,7 @@
 .interstitial-wrapper {
   width: 600px;
   height: 150px;
+  max-width: 100%;
 }
 
 #offline-resources {
