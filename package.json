@@ -8,7 +8,7 @@
     "archive": "npm run build && cd www && bestzip ../cmi5-demo.zip *"
   },
   "devDependencies": {
-    "@stencil/core": "^2.4.0",
+    "@stencil/core": "^2.5.1",
     "@xapi/xapi": "^1.0.0",
     "bestzip": "^2.1.7"
   },
