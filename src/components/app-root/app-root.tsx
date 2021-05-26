@@ -99,7 +99,8 @@ export class AppRoot {
       },
       {
         "en-US": "In a boolean context, is true truthy?",
-      }
+      },
+      answer
     );
   }
 
@@ -328,6 +329,7 @@ export class AppRoot {
       {
         "en-US": "Get a score of minimum 100 on T-Rex Runner",
       },
+      score >= 100,
       {
         start: this.gameStart,
         end: new Date(),
@@ -404,7 +406,8 @@ export class AppRoot {
       },
       {
         "en-US": "How many legs does a human have?",
-      }
+      },
+      this.numeric === 2
     );
   }
 
@@ -452,6 +455,7 @@ export class AppRoot {
       {
         "en-US": "In a boolean context, is true truthy?",
       },
+      answer,
       undefined,
       testObjective
     );
