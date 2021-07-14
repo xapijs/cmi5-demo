@@ -8,13 +8,13 @@
     "archive": "npm run build && cd www && bestzip ../cmi5-demo.zip *"
   },
   "devDependencies": {
-    "@stencil/core": "^2.5.2",
-    "@xapi/xapi": "^1.2.0",
+    "@stencil/core": "^2.6.0",
+    "@xapi/xapi": "^1.2.1",
     "bestzip": "^2.2.0"
   },
   "license": "MIT",
   "dependencies": {
-    "@xapi/cmi5": "^1.1.1",
+    "@xapi/cmi5": "^1.1.2",
     "leaflet": "^1.7.1"
   }
 }
