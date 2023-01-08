@@ -10,7 +10,7 @@
   "devDependencies": {
     "@stencil/core": "^2.21.0",
     "@xapi/xapi": "^1.2.1",
-    "bestzip": "^2.2.0"
+    "bestzip": "^2.2.1"
   },
   "license": "MIT",
   "dependencies": {
