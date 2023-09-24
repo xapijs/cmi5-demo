@@ -13,6 +13,14 @@ export namespace Components {
     interface MapAssessment {
     }
 }
+export interface GameTrexRunnerCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLGameTrexRunnerElement;
+}
+export interface MapAssessmentCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLMapAssessmentElement;
+}
 declare global {
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
@@ -42,11 +50,11 @@ declare namespace LocalJSX {
     interface AppRoot {
     }
     interface GameTrexRunner {
-        "onGameScore"?: (event: CustomEvent<any>) => void;
-        "onGameStart"?: (event: CustomEvent<any>) => void;
+        "onGameScore"?: (event: GameTrexRunnerCustomEvent<any>) => void;
+        "onGameStart"?: (event: GameTrexRunnerCustomEvent<any>) => void;
     }
     interface MapAssessment {
-        "onLocation"?: (event: CustomEvent<any>) => void;
+        "onLocation"?: (event: MapAssessmentCustomEvent<any>) => void;
     }
     interface IntrinsicElements {
         "app-root": AppRoot;
