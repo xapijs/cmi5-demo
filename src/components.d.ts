@@ -28,13 +28,36 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
+    interface HTMLGameTrexRunnerElementEventMap {
+        "gameStart": any;
+        "gameScore": any;
+    }
     interface HTMLGameTrexRunnerElement extends Components.GameTrexRunner, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLGameTrexRunnerElementEventMap>(type: K, listener: (this: HTMLGameTrexRunnerElement, ev: GameTrexRunnerCustomEvent<HTMLGameTrexRunnerElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLGameTrexRunnerElementEventMap>(type: K, listener: (this: HTMLGameTrexRunnerElement, ev: GameTrexRunnerCustomEvent<HTMLGameTrexRunnerElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLGameTrexRunnerElement: {
         prototype: HTMLGameTrexRunnerElement;
         new (): HTMLGameTrexRunnerElement;
     };
+    interface HTMLMapAssessmentElementEventMap {
+        "location": any;
+    }
     interface HTMLMapAssessmentElement extends Components.MapAssessment, HTMLStencilElement {
+        addEventListener<K extends keyof HTMLMapAssessmentElementEventMap>(type: K, listener: (this: HTMLMapAssessmentElement, ev: MapAssessmentCustomEvent<HTMLMapAssessmentElementEventMap[K]>) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | AddEventListenerOptions): void;
+        addEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | AddEventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLMapAssessmentElementEventMap>(type: K, listener: (this: HTMLMapAssessmentElement, ev: MapAssessmentCustomEvent<HTMLMapAssessmentElementEventMap[K]>) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof DocumentEventMap>(type: K, listener: (this: Document, ev: DocumentEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener<K extends keyof HTMLElementEventMap>(type: K, listener: (this: HTMLElement, ev: HTMLElementEventMap[K]) => any, options?: boolean | EventListenerOptions): void;
+        removeEventListener(type: string, listener: EventListenerOrEventListenerObject, options?: boolean | EventListenerOptions): void;
     }
     var HTMLMapAssessmentElement: {
         prototype: HTMLMapAssessmentElement;
